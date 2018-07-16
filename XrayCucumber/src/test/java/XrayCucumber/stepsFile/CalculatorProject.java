@@ -27,10 +27,11 @@ WebDriver driver;
 	 * password: Password321!
 	 */
 	
+///Users/wlayton/git/repository/XrayCucumber/
 	@Before 
 	public void setupChrome()
 	{
-		System.setProperty("webdriver.chrome.driver", "/Users/wlayton/eclipse-workspace/XrayCucumber/src/test/java/resources/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/src/test/java/resources/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
