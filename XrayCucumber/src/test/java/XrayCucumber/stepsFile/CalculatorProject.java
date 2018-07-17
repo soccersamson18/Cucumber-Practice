@@ -31,7 +31,7 @@ WebDriver driver;
 	@Before 
 	public void setupChrome()
 	{
-		System.setProperty("webdriver.chrome.driver", "/src/test/java/resources/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/wlayton/git/repository/XrayCucumber/src/test/java/resources/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
